@@ -1,0 +1,53 @@
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logo-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  margin-top: 4vh;
+}
+
+
+.map-img {
+  margin-top: 2vh;
+  margin-left: 3vh;
+}
+
+p {
+  font-size: 4vh;
+  padding: 3vh;
+  margin-left: 2vh;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 1.5vh;
+}
+
+.space {
+  padding: 5vh;
+}
+
+.space1 {
+  padding: 2vh;
+}
+
+#splashview {
+  background-color: #F8C750;
+}
+
+#mainview {
+  background-color: #2B2B2B;
+}
+
+.title {
+  color: white;
+  font-size: 3vh;
+}

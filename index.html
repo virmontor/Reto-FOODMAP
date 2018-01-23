@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodMap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <!--CONTENDEDOR VISTA splash-->
+    <main id="splashview"class="container-fluid">
+        <section class="row">
+           <div class="logo col-xs-6 col-xs-offset-3">
+             <img src="assets/images/giftimg.gif" alt="">
+           </div>
+        </section>
+    </main>
+
+    <!--CONTENDEDOR VISTA PRINCIPAL-->
+    <main id="mainview"class="container-fluid">
+        <section class="row-fluid">
+          <div class="logo-home col-xs-12">
+            <img src="assets/images/logoForma.png" alt="">
+          </div>
+          <section class="row-fluid">
+            <div class="map-container">
+              <iframe class="map-img"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.817089282081!2d-99.16530288504518!3d19.420307446105877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3758fdbe95%3A0xdbc95f761115cd14!2sTonal%C3%A1+30%2C+Roma+Nte.%2C+06700+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1515805916228"
+                              frameborder="0" style="border:0" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="row-fluid">
+              <p class="col-xs-offset-2 title">Comida cerca de ti</p>
+              <!--INPUT-->
+              <div class="row">
+                  <div class= "col-xs-9 col-xs-offset-1">
+                     <form class="form-horizontal input-space">
+                         <div class="input-group">
+                             <input type="text" id="search" class="form-control input-lg" placeholder="Mexicana, Italiana, Española, China">
+                             <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+                         </div>
+                    </form>
+                  </div>
+              </div>
+          </section>
+          <!--Categorias-->
+          <section>
+              <div class="space1 row"></div>
+              <div class="row category-galery">
+                    <div class="category-galery1 row-fluid">
+                      <img class="col-xs-5 col-xs-offset-1  galery img-responsive"src="assets/images/taco.jpg" data-name= "Taquitos deliciosos" data-toggle="modal" data-target="#myModal"alt="">
+                      <img class="col-xs-5 col-xs galery img-responsive"src="assets/images/paella.jpg" data-toggle="modal" data-target="#myModal"alt="">
+                    </div>
+                    <div class="space row"></div>
+                    <div class="category-galery2row-fluid">
+                      <img class="col-xs-5 col-xs-offset-1 img-responsive"src="assets/images/pizza.jpg" data-toggle="modal" data-target="#myModal"alt="">
+                      <img class="col-xs-5 img-responsive"src="assets/images/roll.jpg" data-toggle="modal" data-target="#myModal"alt="">
+                    </div>
+              </div>
+                </div>
+          </section>
+        </section>
+
+        <!--Modal-->
+            <div class="container modal-container">
+              <!-- Trigger the modal with a button -->
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p id="">Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="space"></div>
+    </main>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+      </body>
+      </html>
